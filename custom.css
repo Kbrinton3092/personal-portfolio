@@ -1,0 +1,25 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  transition-timing-function: ease-out;
+  transition-duration: 700ms;
+}
+
+a:hover {
+  transform: scale(.9);
+  text-decoration: none;
+}
+
+/* Nav Section */
+
+#brand {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+#nav-items {
+  font-weight: 500;
+  font-size: 17px;
+}
