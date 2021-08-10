@@ -12,14 +12,94 @@ a:hover {
   text-decoration: none;
 }
 
+.fab {
+  display: inline-block;
+  width: 1em;
+  text-rendering: auto;
+}
+
+.fa-linkedin-in {
+  text-align: center;
+}
+
 /* Nav Section */
 
 #brand {
   font-weight: 600;
   font-size: 22px;
+  letter-spacing: 4px;
+  text-decoration: underline;
 }
 
 #nav-items {
-  font-weight: 500;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+/* Main Intro Section */
+
+@media (max-width: 992px) {
+  .site-intro h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .site-intro h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .divider {
+    max-width: 300px;
+  }
+}
+
+.main-intro {
+  min-height: 500px;
+  background-image: url("./images/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.site-intro {
+  color: white;
+  padding-top: 175px;
+}
+
+.divider {
+  width: 400px;
+  margin-top: 30px;
+  border-top: solid 2px #f8f8f8;
+}
+
+.sm-list {
+  display: inline-flex;
+}
+
+.social-media {
+  transition-timing-function: ease-in;
+  transition-duration: 700ms;
+  padding-right: 20px;
+}
+
+.social-media:hover {
+  transform: scale(.9);
+}
+
+.social-media-gh {
+  transition-timing-function: ease-in;
+  transition-duration: 700ms;
+}
+
+.social-media-gh:hover {
+  transform: scale(.9);
+}
+
+/* End Intro Section */
+
+.project {
+ letter-spacing: 3px;
 }
