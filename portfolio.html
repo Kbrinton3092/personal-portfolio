@@ -14,8 +14,9 @@
   <script src="https://kit.fontawesome.com/a3d7fee849.js" crossorigin="anonymous"></script>
   <title>Personal Portfolio</title>
   </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-light navbar-transparent pt-2 pb-0">
+  <body data-spy="scroll" data-target="main-nav">
+  <nav class="navbar navbar-expand-lg navbar-light pt-2 pb-0 position-fixed-top
+  w-100 bg-white" id="main-nav">
     <a class="navbar-brand ml-3" href="#" id="brand">Kris Brinton</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,6 +29,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#background">Background</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-me">Contact Me</a>
         </li>
       </ul>
     </div>
@@ -110,26 +114,72 @@
 <!-- End Project Section -->
 <div class="container about-me-section" id="background">
     <div class="row">
-      <div class="col-12" id="about-me">
+      <div class="col-12 py-2" id="about-me">
         <p class="text-center pt-2 font-weight-light project"
         style="font-size: 30px;">
           My Background.
         </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4 col-sm-5">
-        <img src="./images/kb-headshot.jpg">
+    <div class="row justify-content-center">
+      <div class="col-4 col-sm-3" style="max-width: 250px;">
+        <img src="./images/kb-headshot.jpg" class="rounded rounded-bottom pb-4">
       </div>
-      <div class="col-8 col-sm-7">
-        <span>I come from a finance background, having little exposure to the world
+      <div class="col-8 col-sm-9">
+        <span class="my-bg font-weight-bold">I come from a finance background, having little exposure to the world
         of development, I relied heavily on the guidance of Altcademy to help
         teach the skills neccessary to kickstart my coding journey. Upon graduating
         from the University of South Florida, I went to work in medical device sales where
-        I stayed for two-years. </span>
+        I stayed for two-years. I then found myself in the wonderful world of mortgage lending
+        where I became a top producing loan officer, producing $1.5 million in sales per month.
+        <br>
+        I was born in Russia and moved to sunny Tampa, FL shortly after. Growing up
+        in Florida exposed me to the wonders of nature and outdoor activities. That
+        being said, I spend most of my free time running outside, playing soccer,
+        and lounging on the beach. I am eager to grow my development skills and
+        am ready to learn as much as possible!
+        </span>
       </div>
   </div>
 </div>
+<!-- insert contact me form -->
+<div class="contact-section" id="contact-me">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="form-header text-white">Contact Me.</h2>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <form class="contact-me text-center">
+          <div class="form-group">
+            <label for="name" class="text-white">Full Name</label>
+            <input type="name" class="form-control" id="name" aria-describedby="name">
+          </div>
+          <div class="form-group">
+             <label for="exampleInputEmail1" class="text-white">Email address</label>
+             <input type="text" class="form-control" id="exampleInputEmail1"
+             aria-describedby="emailHelp" placeholder="email@email.com">
+             <small id="emailHelp" class="form-text text-muted text-white" required>
+               I'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+             <label for="phone-number" class="text-white">Phone Number</label>
+             <input type="text" class="form-control" id="exampleInputEmail1"
+             aria-describedby="emailHelp" placeholder="(000)000-0000" required>
+          </div>
+          <textarea name="message" col="200" rows="3"></textarea>
+          <br>
+          <button type="submit" class="contact-btn btn btn-outline-light"><i class="fas fa-rocket">
+          </i>Send It!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Section -->
 
 
 

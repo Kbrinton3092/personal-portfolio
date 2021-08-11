@@ -103,3 +103,38 @@ a:hover {
 .project {
  letter-spacing: 3px;
 }
+
+/* Form section */
+
+.contact-section {
+  min-height: 525px;
+  background-image: url("./images/bg-img.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.form-header {
+ text-align: center;
+ padding-top: 15px;
+ letter-spacing: 3px;
+ text-decoration: underline;
+}
+
+.form-group {
+  width: 300px;
+  margin-left: 397px;
+}
+
+.contact-btn {
+  padding: 12px;
+  transition-timing-function: ease-in;
+  transition-duration: 700ms;
+}
+
+.contact-btn:hover {
+  transform: scale(.9);
+}
+
+.contact-btn i {
+  padding-right: 5px;
+}
