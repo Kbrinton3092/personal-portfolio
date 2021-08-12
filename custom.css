@@ -138,3 +138,14 @@ a:hover {
 .contact-btn i {
   padding-right: 5px;
 }
+
+/* Footer Section */
+
+.footer-section {
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.social-icons a{
+  color: black;
+}
